@@ -1,5 +1,7 @@
 function [blendA, blendB] = exercicio2(NG)
 
+pkg load optim
+
 ##f = @(x)(10*x(1)+2*1*x(2));
 f = [10, 2*NG]';
 
@@ -25,8 +27,8 @@ x_max_valores = [20; 50];
 
 custo = f'*x_star
 
-blendA=x_star(1);
-blendB=x_star(2);
+blendA=x_star(1)
+blendB=x_star(2)
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 
 endfunction
